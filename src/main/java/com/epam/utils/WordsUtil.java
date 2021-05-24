@@ -20,7 +20,6 @@ public class WordsUtil {
                 words.add(text.substring(firstIndex, lastIndex));
             }
         }
-
         return words;
     }
 }

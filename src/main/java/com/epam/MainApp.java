@@ -15,10 +15,11 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 public class MainApp {
 
-
     @Bean
-    public SparkContext sc(){
-        return new SparkContext(new SparkConf().setMaster("local[*]").setAppName("music"));
+    public SparkContext sc() {
+        return new SparkContext(
+                new SparkConf().setMaster("local[*]").setAppName("music")
+        );
     }
 
     public static void main(String[] args) {
